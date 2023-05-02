@@ -15,6 +15,8 @@ public class GameWindow {
         jframe.setResizable(false);
         jframe.pack();
         jframe.setLocationRelativeTo(null);
+    //    jframe.setExtendedState(JFrame.MAXIMIZED_BOTH);
+    //    jframe.setUndecorated(true);
         jframe.setVisible(true);
 
         jframe.addWindowFocusListener(new WindowFocusListener() {

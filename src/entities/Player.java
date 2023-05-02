@@ -15,6 +15,7 @@ import static utilz.Constants.GRAVITY;
 import static utilz.Constants.PlayerConstants.*;
 import static utilz.HelpMethods.*;
 
+
 public class Player extends Entity {
 
     private BufferedImage[][] animations;

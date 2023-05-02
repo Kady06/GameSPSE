@@ -35,8 +35,8 @@ public class Constants {
         public static final int CONTAINER_WIDTH = (int) (Game.SCALE * CONTAINER_WIDTH_DEFAULT);
         public static final int CONTAINER_HEIGHT = (int) (Game.SCALE * CONTAINER_HEIGHT_DEFAULT);
 
-        public static final int POTION_WIDTH_DEFAULT = 24;
-        public static final int POTION_HEIGHT_DEFAULT = 32;
+        public static final int POTION_WIDTH_DEFAULT = 18;
+        public static final int POTION_HEIGHT_DEFAULT = 24;
         public static final int POTION_WIDTH = (int) (Game.SCALE * POTION_WIDTH_DEFAULT);
         public static final int POTION_HEIGHT = (int) (Game.SCALE * POTION_HEIGHT_DEFAULT);
 
@@ -89,8 +89,8 @@ public class Constants {
         public static final int HRADSKY_WIDTH = (int) (HRADSKY_WIDTH_DEFAULT * Game.SCALE);
         public static final int HRADSKY_HEIGHT = (int) (HRADKSY_HEIGHT_DEFAULT * Game.SCALE);
 
-        public static final int HRADSKY_DRAWOFFSET_X = (int) (0 * Game.SCALE);
-        public static final int HRADSKY_DRAWOFFSET_Y = (int) (0 * Game.SCALE);
+        public static final int HRADSKY_DRAWOFFSET_X = (int) (26 * Game.SCALE);
+        public static final int HRADSKY_DRAWOFFSET_Y = (int) (9 * Game.SCALE);
 
         public static int GetSpriteAmount(int enemy_type, int enemy_state) {
 
@@ -111,7 +111,15 @@ public class Constants {
                 case HRADSKY:
                     switch (enemy_state) {
                         case IDLE:
-                            return 1;
+                            return 9;
+                        case RUNNING:
+                            return 6;
+                        case ATTACK:
+                            return 7;
+                        case HIT:
+                            return 4;
+                        case DEAD:
+                            return 5;
                     }
             }
             return 0;
@@ -121,7 +129,7 @@ public class Constants {
                 case CRABBY:
                     return 10;
                 case HRADSKY:
-                    return 30;
+                    return 10;
                 default:
                     return 1;
             }

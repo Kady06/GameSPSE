@@ -89,7 +89,7 @@ public class ObjectManager {
 
         for (int j = 0; j < potionImgs.length; j++) {
             for (int i = 0; i < potionImgs[j].length; i++) {
-                potionImgs[j][i] = potionSprite.getSubimage(240*i, 320*j, 240, 320);
+                potionImgs[j][i] = potionSprite.getSubimage(12*i, 16*j, 12, 16);
             }
         }
 
