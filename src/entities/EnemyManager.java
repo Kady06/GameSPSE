@@ -19,7 +19,7 @@ public class EnemyManager {
     private ArrayList<Crabby> crabbies = new ArrayList<>();
 
     private BufferedImage[][] hradskyArr;
-    private ArrayList<Hradsky> hradove;
+    private ArrayList<Hradsky> hradove = new ArrayList<>();
 
     public EnemyManager(Playing playing) {
         this.playing = playing;
